@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+}
+
+.cards:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    transition: 0.3s ease all;
+    transform: translateY(-1px);
+}
+
+.cards .card-top {
+    overflow: hidden;
+    font-size: 50px;
+    color: #fff;
+    background-color: #010010;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.cards .card-top i {
+    padding: 25px;
+    border-top: 2px solid #1abc9c;
+    border-bottom: 2px solid #1abc9c;
+    border-left: 2px solid dodgerblue;
+    border-right: 2px solid dodgerblue;
+    border-radius: 100%;
+    transition: .5s all ease;
+    color: #1abc9c;
+}
+
+.cards:hover .card-top i {
+    padding: 25px;
+    border-left: 2px solid #1abc9c;
+    border-right: 2px solid #1abc9c;
+    border-top: 2px solid dodgerblue;
+    border-bottom: 2px solid dodgerblue;
+    border-radius: 100%;
+    transform: rotateY(360deg) rotateY(0deg);
+}
+
+.cards .card-bottom {
+    overflow: hidden;
+    padding: 20px;
+    background: linear-gradient(135deg, #1abc9c, dodgerblue);
+    color: white;
+    display: flex;
+    justify-content: center;
+}
